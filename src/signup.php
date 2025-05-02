@@ -7,7 +7,7 @@ include('../config/database.php');
 $fname     = $_POST['f_name'];
 $lname     = $_POST['l_name'];
 $email     = $_POST['e_mail'];
-$passwd   = $_POST['passw'];
+$passwd   = $_POST['passwd'];
 
 // $enc_pass=md5($passwd);
 $enc_pass=sha1($passwd);
@@ -27,8 +27,10 @@ if($res){
        $res = pg_query($conn, $sql);
 
       if($res){
-      echo "user has been created succesfully";
-      }else {
+      echo "<scrip>alert('user has been created. Go to login!')</script>";
+      header('Refresh:0; URL=http://localhost/Schoolar/src/signin.html');
+      }
+      else {
        echo "error";
       }
     }

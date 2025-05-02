@@ -23,10 +23,10 @@ password=$password
 ");
 
 if(!$conn){
-    die("Connection error: ". pg_last_error());
+    //die("Connection error: ". pg_last_error());
 
 
 }else{
-    echo "Succes connection";
+ //   echo "Succes connection";
 }
 ?>

@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if (!isset($_SESION['user_id'])){
+    
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,7 @@
     <title>Schoolar - Home</title>
 </head>
 <body>
-  <a href="src/signin.html">sign in</a>&nbsp;|&nbsp;
-    <a href="src/signup.html">sign up </a>
+  
+    <a href="src/signup.html">logout </a>
 </body>
 </html>
